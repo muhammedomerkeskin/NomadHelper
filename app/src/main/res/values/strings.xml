@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Nomad Helper</string>
+    <string name="home">Home</string>
+    <string name="current_latitude">Current Latitude</string>
+    <string name="current_longitude">Current Longitude</string>
+    <string name="current_msl">Current MSL</string>
+    <string name="destination_msl">Destination MSL</string>
+    <string name="destination_longitude">Destination Longitude</string>
+    <string name="destination_latitude">Destination Latitude</string>
+    <string name="air_distance">Air Distance</string>
+    <string name="height">Height</string>
+    <string name="yaw_angle">Yaw Angle</string>
+    <string name="pitch_angle">Pitch Angle</string>
+    <string name="current_heading">Current Heading</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+    <string name="location_metrics">Location\nMetrics</string>
+    <string name="geolocation_metrics_calculations">Geolocation Metrics Calculations</string>
+    <string name="destination_location_calculations">Destination Location Calculations</string>
+    <string name="destination_location">Destination\nLocation</string>
+    <string name="setting_location_alert">Setting Location Alert</string>
+    <string name="setting_of_location_alert">Setting of\nLocation Alert</string>
+    <string name="destination_distance">Destination Distance</string>
+    <string name="current_location">Current Location</string>
+    <string-array name="trigonometry_operations">
+        <item>sin</item>
+        <item>cos</item>
+        <item>tan</item>
+    </string-array>
+    <string-array name="trigonometry_arc_operations">
+        <item>arcsin</item>
+        <item>arccos</item>
+        <item>arctan</item>
+    </string-array>
+
+
+</resources>

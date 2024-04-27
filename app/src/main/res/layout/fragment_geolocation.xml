@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Geolocation">
+
+    <LinearLayout
+        android:id="@+id/ll_geolocation_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/ll_geolocation_inputs_current_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_geolocation_inputs_current_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_latitude" />
+
+            <EditText
+                android:id="@+id/edt_geolocation_inputs_current_latitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Ex: 12.34567"
+                android:digits="1234567890.-"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="9"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_geolocation_inputs_current_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_geolocation_inputs_current_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_longitude" />
+
+            <EditText
+                android:id="@+id/edt_geolocation_inputs_current_longitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Ex: 12.34567"
+                android:digits="1234567890.-"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="9"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_geolocation_inputs_current_msl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_geolocation_inputs_current_msl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_msl" />
+
+            <EditText
+                android:id="@+id/edt_geolocation_inputs_current_msl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Ex: 12.34567"
+                android:digits="1234567890."
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="9"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_geolocation_inputs_destination_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_geolocation_inputs_destination_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/destination_latitude" />
+
+            <EditText
+                android:id="@+id/edt_geolocation_inputs_destination_latitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Ex: 12.34567"
+                android:digits="1234567890.-"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="9"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_geolocation_inputs_destination_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_geolocation_inputs_destination_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/destination_longitude" />
+
+            <EditText
+                android:id="@+id/edt_geolocation_inputs_destination_longitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Ex: 12.34567"
+                android:digits="1234567890.-"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="9"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_geolocation_inputs_destination_msl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_geolocation_inputs_destination_msl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/destination_msl" />
+
+            <EditText
+                android:id="@+id/edt_geolocation_inputs_destination_msl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Ex: 12.34567"
+                android:digits="1234567890."
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="9"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_geolocation_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_geolocation_inputs"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_geolocation_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/calculate"
+            android:src="@drawable/calculate"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_geolocation_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/clear"
+            android:src="@drawable/clear"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_geolocation_outputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_geolocation_buttons"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_geolocation_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/height"/>
+
+        <TextView
+            android:id="@+id/tv_geolocation_air_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/air_distance"/>
+
+        <TextView
+            android:id="@+id/tv_geolocation_yaw_angle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/yaw_angle"/>
+
+        <TextView
+            android:id="@+id/tv_geolocation_pitch_angle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pitch_angle"/>
+    </LinearLayout>
+</RelativeLayout>

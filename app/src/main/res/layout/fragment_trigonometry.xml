@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Trigonometry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/edt_trigonometry_value"
+                style="@style/TextColorHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:autofillHints=""
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_trigonometry_angle"
+                style="@style/TextColorHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_trigonometry_value"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:autofillHints=""
+                android:hint="Enter angle"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <Spinner
+                android:id="@+id/sp_operations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_trigonometry_angle"
+                android:layout_marginTop="24dp"
+                android:entries="@array/trigonometry_operations"
+                android:minHeight="48dp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <ImageButton
+                android:id="@+id/img_btn_trigonometry_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_operations"
+                android:layout_marginTop="24dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/calculate"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/tv_trigonometry_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_btn_trigonometry_calculate"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"
+                tools:ignore="ObsoleteLayoutParam" />
+        </LinearLayout>
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/edt_trigonometry_value_1"
+                style="@style/TextColorHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:autofillHints=""
+                android:hint="Enter value 1"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_trigonometry_value_2"
+                style="@style/TextColorHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_trigonometry_value"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:autofillHints=""
+                android:hint="Enter value 2"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <Spinner
+                android:id="@+id/sp_operations_arc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_trigonometry_angle"
+                android:layout_marginTop="24dp"
+                android:entries="@array/trigonometry_arc_operations"
+                android:minHeight="48dp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <ImageButton
+                android:id="@+id/img_btn_trigonometry_calculate_arc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_operations"
+                android:layout_marginTop="24dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/calculate"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/tv_trigonometry_result_arc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_btn_trigonometry_calculate"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"
+                tools:ignore="ObsoleteLayoutParam" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    style="@style/SCREEN">
+
+    <LinearLayout android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_main_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/img_btn_main_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/home"
+                app:srcCompat="@drawable/home"
+                tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/tv_main_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/main"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/ll_main_geolocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/img_btn_main_geolocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/geolocation_metrics_calculations"
+                app:srcCompat="@drawable/locations_on_earth"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_main_geolocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/location_metrics"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:id="@+id/ll_main_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/img_btn_main_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/destination_location_calculations"
+                app:srcCompat="@drawable/distance_between_2_location"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_main_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/destination_location"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:id="@+id/ll_main_location_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/img_btn_main_location_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/setting_location_alert"
+                app:srcCompat="@drawable/alarm_in_home"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_main_location_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/setting_of_location_alert"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:id="@+id/ll_main_trigonometry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/img_btn_main_trigonometry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Trigonometric Calculations"
+                app:srcCompat="@drawable/angle"
+                tools:ignore="HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_main_trigonometry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Trigonometric\nCalculation"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentMain"
+        android:name="com.nomad01.Home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_buttons"
+        android:layout_above="@+id/AdView_Main"
+        />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/AdView_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9376578491124053/7547197737" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NomadHelper" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+    <style name="TEXT_COLOR">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextColorHint">
+        <item name="android:textColorHint">@color/textColorHintDark</item>
+    </style>
+    <style name="SCREEN">
+        <item name="android:background">@color/black</item>
+    </style>
+</resources>
